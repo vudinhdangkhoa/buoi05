@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:buoi05/huongdan1.dart';
 
 void main() {
   runApp(menu());
@@ -15,16 +16,14 @@ class menu extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue),
       ),
-      home: Menu(), // ✅ Đặt Menu() làm màn hình chính
+      home: Menu(), //
     );
   }
 }
 
-// tạo 1 class menu kế thừa từ StatelessWidget trong đó có 5 button để chuyển đến các hướng dẫn
 class Menu extends StatelessWidget {
   const Menu({super.key});
 
-  // ✅ Đổi tên class theo chuẩn PascalCase
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,12 +35,10 @@ class Menu extends StatelessWidget {
             children: <Widget>[
               ElevatedButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (context) => huongdan1(),
-                  //   ),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Huongdan1()),
+                  );
                 },
                 child: const Text('Hướng dẫn 1'),
               ),
