@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:buoi05/huongdan1.dart';
+import 'huongdan2.dart';
+import 'huongdan3.dart';
+import 'bai1trenlop.dart';
 
 void main() {
   runApp(menu());
@@ -44,32 +47,28 @@ class Menu extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (context) => const BaiTapStack(),
-                  //   ),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Huongdan2()),
+                  );
                 },
                 child: const Text('Hướng dẫn 2'),
               ),
               ElevatedButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (context) => const BaiTapStack(),
-                  //   ),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Huongdan3()),
+                  );
                 },
                 child: const Text('Hướng dẫn 3'),
               ),
               ElevatedButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => bai1tl()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Bai1trenlop()),
+                  );
                 },
                 child: const Text('Bài 1 trên lớp'),
               ),
