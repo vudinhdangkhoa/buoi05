@@ -3,6 +3,10 @@ import 'package:buoi05/huongdan1.dart';
 import 'huongdan2.dart';
 import 'huongdan3.dart';
 import 'bai1trenlop.dart';
+import 'bai2trenlop.dart';
+import 'baividu1.dart';
+import 'baividu2.dart';
+import 'baividu3.dart';
 
 void main() {
   runApp(menu());
@@ -36,6 +40,33 @@ class Menu extends StatelessWidget {
           padding: const EdgeInsets.all(14.0),
           child: Column(
             children: <Widget>[
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => bai1vidu()),
+                  );
+                },
+                child: const Text('Ví dụ 1'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => baividu2()),
+                  );
+                },
+                child: const Text('Ví dụ 2'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => baividu3()),
+                  );
+                },
+                child: const Text('Ví dụ 3'),
+              ),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -74,10 +105,10 @@ class Menu extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => Bai2trenlop()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Bai2trenlop()),
+                  );
                 },
                 child: const Text('bài 2 trên lớp'),
               ),
