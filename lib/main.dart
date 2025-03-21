@@ -7,6 +7,8 @@ import 'bai2trenlop.dart';
 import 'baividu1.dart';
 import 'baividu2.dart';
 import 'baividu3.dart';
+import 'bai3trenlop.dart';
+import 'bai4/bai4trenlop.dart';
 
 void main() {
   runApp(menu());
@@ -114,19 +116,19 @@ class Menu extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => bai3trenlop()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Bai3trenlop()),
+                  );
                 },
                 child: const Text('bai 3 trên lớp'),
               ),
               ElevatedButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => Bai4venha()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Bai4trenlop()),
+                  );
                 },
                 child: const Text('bai 4 về nhà'),
               ),
