@@ -24,7 +24,8 @@ class _DSGioHangState extends State<DSGioHang> {
           children: [
             Expanded(
               child: Container(
-                child: Center(
+                child: Align(
+                  alignment: Alignment.bottomCenter,
                   child: Text(
                     'Giỏ hàng của bạn đang trống',
                     style: TextStyle(fontSize: 20),
